@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Lista de tareas</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <i class="bi bi-list nav_hamburger"></i>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="registrarte.html">Registrarte</a></li>
+      <li><a href="login.html">Iniciar sesión</a></li>
+    </ul>
+  </nav>
+
+  <main class="registrarte_main">
+    <div class="registrarte_title">
+      <h1 class="registrarte_h1">Registrarte</h1>
+      <hr>
+    </div>
+
+    <form action="">
+      <label for="registrarte_nombre">
+        <h2 class="registrarte_h2">Nombre:</h2>
+        <input type="text" id="registrarte_nombre" class="registrarte_input" placeholder="Introduce tu nombre" required
+          minlength="2">
+      </label>
+      <label for="registrarte_email">
+        <h2 class="registrarte_h2">Email:</h2>
+        <input type="email" id="registrarte_email" class="registrarte_input" placeholder="Introduce tu email" required>
+      </label>
+      <label for="registrarte_password">
+        <h2 class="registrarte_h2">Contraseña:</h2>
+        <input type="password" id="registrarte_password" class="registrarte_input" placeholder="Introduce tu contraseña"
+          required minlength="4">
+      </label>
+      <div>
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+
+  </main>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

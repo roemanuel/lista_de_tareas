@@ -3,17 +3,30 @@
   font-family: 'Lato', sans-serif;
 }
 
+body {
+  background-color: #1B1B1D;
+}
+
 .body-scroll-lock {
   overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+p,
+a,
+nav ul li {
+  color: white;
+}
+
 nav {
   --movimiento: translate(100%);
-
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   height: 3.125rem;
-  background-color: #35d4e8;
+  width: 100%;
+  background-color: #262930;
   position: fixed;
 }
 
@@ -22,8 +35,9 @@ nav i {
   display: grid;
   align-items: center;
   justify-items: center;
-  font-size: 2.5rem;
+  font-size: 2.1875rem;
   color: white;
+  cursor: pointer;
 }
 
 nav ul {
@@ -34,23 +48,96 @@ nav ul {
   bottom: 0;
   margin: 0;
   padding: 0;
-  background-color: #35d4e8;
+  background-color: #262930;
   display: grid;
   justify-content: right;
   align-content: center;
   gap: 1.875rem;
   text-align: end;
   transform: var(--movimiento);
-  transition: transform .3s ease;
+  transition: transform .3s;
 }
 
 nav ul li {
   list-style: none;
-  color: white;
   letter-spacing: .0938rem;
   padding-right: 1.25rem;
 }
 
+a {
+  text-decoration: none;
+  transition: 0.15s;
+  color: white;
+  padding: .625rem;
+  border-radius: .9375rem;
+}
+
+a:hover {
+  background-color: #3F4659;
+}
+
 main {
   padding-top: 3.125rem;
+  display: grid;
+  justify-items: center;
+}
+
+/*PAGES REGISTRARTE*/
+
+.registrarte_title,
+.login_title {
+  width: 70%;
+}
+
+.registrarte_h1,
+.login_h1 {
+  text-align: center;
+  font-size: 1.5625rem;
+}
+
+.registrarte_h2,
+.login_h2 {
+  font-size: .9375rem;
+  margin-bottom: .625rem;
+  text-align: start;
+  cursor: pointer;
+}
+
+.registrarte_input,
+.login_input {
+  border-radius: .375rem;
+  border: none;
+  padding: .3125rem;
+  outline: none;
+}
+
+.registrarte_input::placeholder,
+.login_input::placeholder {
+  color: #262930;
+}
+
+input[type="submit"] {
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: .3125rem;
+  width: 55%;
+  border-radius: .375rem;
+  font-size: .9375rem;
+  display: grid;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.15s;
+  border: .0625rem solid rgba(255, 255, 255, 0);
+}
+
+input[type="submit"]:hover {
+  background-color: #3F4659;
+  color: white;
+}
+
+form div {
+  display: grid;
+  justify-items: center;
+  margin-top: 1.5625rem;
 }
