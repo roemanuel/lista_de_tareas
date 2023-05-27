@@ -141,3 +141,78 @@ form div {
   justify-items: center;
   margin-top: 1.5625rem;
 }
+
+/*PAGES LISTA_DE_TAREAS*/
+
+.task_main {
+  display: grid;
+  gap: .625rem;
+}
+
+.task_main_new_task_contain h3 {
+  font-size: .9375rem;
+}
+
+.task_main_new_task_contain input,
+.new_task_contain_color_select,
+.new_task_contain_import {
+  padding: .3125rem;
+  border-radius: .625rem;
+  border: none;
+  font-size: .9375rem;
+}
+
+.new_task_contain_color_select {
+  grid-column: 2/11;
+}
+
+.task_main_new_task,
+.task_main_tasks {
+  margin-top: .625rem;
+  background-color: #3F4659;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  justify-items: center;
+  border-radius: .625rem;
+}
+
+.task_main_new_task h2,
+.task_main_tasks h2 {
+  grid-column: 3/11;
+  font-size: 17px;
+}
+
+.task_main_new_task i,
+.task_main_tasks i {
+  grid-column: 11/12;
+  color: white;
+  font-size: .9375rem;
+}
+
+.task_main_new_task_contain {
+  grid-column: 1/13;
+  padding-bottom: 1.25rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+.new_task_color_container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  gap: .625rem;
+}
+
+.new_task_contain_color_preview {
+  grid-column: 11 / 12;
+  background-color: white;
+  border: .0625rem solid white;
+  border-radius: 50%;
+  height: 1.25rem;
+  width: 1.25rem;
+}

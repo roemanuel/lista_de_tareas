@@ -11,16 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>Lista de tareas</title>
+  <title>Inicio - Lista de tareas</title>
 </head>
 
 <body>
   <nav class="nav">
     <i class="bi bi-list nav_hamburger"></i>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="pages/registrarte.html">Registrarte</a></li>
-      <li><a href="pages/login.html">Iniciar sesión</a></li>
+      <li><a href="index.php">Inicio</a></li>
+      <li><a href="pages/registrarte.php">Registrarte</a></li>
+      <li><a href="pages/login.php">Iniciar sesión</a></li>
     </ul>
   </nav>
 
